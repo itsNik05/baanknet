@@ -1,0 +1,7 @@
+SUpabase API Url
+https://frohpqttcxzxsgdokoqx.supabase.co
+
+
+service_role
+
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZyb2hwcXR0Y3h6eHNnZG9rb3F4Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3MTAxODI3MywiZXhwIjoyMDg2NTk0MjczfQ.sKF4JmaW0wk_TiObT56ewpwoUGJTIWEEqEtRcJlGNIk
