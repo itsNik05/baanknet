@@ -2,8 +2,8 @@ name: Baanknet Delhi Crawler
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 3 * * *"   # runs daily at 3 AM UTC
+  #schedule:
+   # - cron: "0 3 * * *"   # runs daily at 3 AM UTC
 
 jobs:
   crawl:
