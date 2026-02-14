@@ -10,8 +10,6 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # -----------------------------
 # SUPABASE CONFIG
 # -----------------------------
-from supabase import create_client
-
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
@@ -52,7 +50,6 @@ PAYLOAD = {
     "sortBy": "3"
 }
 
-
 # -----------------------------
 # HELPERS
 # -----------------------------
@@ -73,7 +70,6 @@ def parse_datetime(dt_str):
 
 def fetch_listing_page(page, size=50):
     url = f"{LIST_API}?page={page}&size={size}"
-
     r = requests.post(url, headers=HEADERS, cookies=COOKIES, json=PAYLOAD, verify=False)
 
     if r.status_code != 200:
@@ -135,9 +131,6 @@ def save_to_supabase(item):
     return True
 
 
-# -----------------------------
-# MAIN
-# -----------------------------
 def main():
     page = 0
     size = 50

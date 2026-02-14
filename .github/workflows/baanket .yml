@@ -1,16 +1,16 @@
 name: Baanknet Delhi Crawler
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
   workflow_dispatch:
+  schedule:
+    - cron: "0 3 * * *"   # runs daily at 3 AM UTC
 
 jobs:
   crawl:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Setup Python
